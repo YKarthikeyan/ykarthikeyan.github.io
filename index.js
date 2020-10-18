@@ -60,6 +60,22 @@ document.querySelector('.upload').addEventListener('click', function(ev){
     self.classList.add('loading');
     setTimeout(function() {
         self.classList.remove('loading');
-        window.open('./files/Karthikeyan.Y_resume.pdf')
+        window.open('./files/Karthikeyan.Y-SoftwareEngineer-resume.pdf')
     }, 4200);
 })
+
+
+window.onscroll = function() {myFunction()};
+
+var header = document.querySelector(".header");
+var prev = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > header.offsetTop) {
+    header.classList.add("sticky");
+  } else if (window.pageYOffset < prev) {
+    header.classList.remove("sticky");
+  }
+}
+
+//quotes slider
+
