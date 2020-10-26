@@ -65,17 +65,15 @@ document.querySelector('.upload').addEventListener('click', function(ev){
 })
 
 
+var header = document.querySelector(".header");
+var actualHeaderPos = header.offsetTop;
 window.onscroll = function() {myFunction()};
 
-var header = document.querySelector(".header");
 var prev = header.offsetTop;
 function myFunction() {
-  if (window.pageYOffset > header.offsetTop) {
+  if (window.scrollY >= actualHeaderPos) {
     header.classList.add("sticky");
-  } else if (window.pageYOffset < prev) {
+  } else if(window.scrollY <= actualHeaderPos){
     header.classList.remove("sticky");
   }
 }
-
-//quotes slider
-

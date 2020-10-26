@@ -51,6 +51,7 @@ header {
   border-right: 20px solid #f9f9f9;
   margin-bottom: 30px;
   z-index: 20;
+  transition: all 0.5s ease-in-out;
 }
 
 .sticky {
