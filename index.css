@@ -117,13 +117,17 @@ header {
 /* intro begins */
 
 .section.intro {
-  background-color: #edc4be;
+  background-color: #baf0fe;
 }
 
 .banner {
   max-width: 500px;
   text-align: center;
   margin: 0 auto;
+}
+
+.banner img{
+  width: 100%;
 }
 
 .myname {
@@ -138,6 +142,7 @@ header {
   margin: 10px;
   font-size: 25px;
   font-variant: small-caps;
+  color: #66647e;
 }
 
 .text-wrap {
@@ -182,19 +187,47 @@ header {
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
+  position: relative;
+
+  background: url(./images/ll.jpg);
+  background-repeat: repeat-x;
+  background-position: top;
 }
-.about-me img {
+
+
+.about-me .mypic {
+    width: 100%;
+    z-index: 1;
+    margin-top: 180px;
+    background: #fcd7ab;
+}
+
+.mypic img {
   width: 300px;
   border-radius: 50%;
   margin: 30px auto;
 }
+.about-me .description {
+  background: #fcd7ab;
+}
 .about-me div {
   margin: auto;
+  z-index: 1;
+  padding: 10px 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .about-me img {
     width: 200px;
+  }
+
+  .about-me .overlay {
+    left: 0;
+  }
+
+  .about-me .bg-img{
+    display: none;
+    right: 0;
   }
 }
 
@@ -472,8 +505,6 @@ body .dribbble img {
 .section.reach-me {
   position: relative;
   background: #f9f9f9;
-  background: url('./images/adventure_1.svg');
-  background-repeat: no-repeat;
 }
 
 .madewithlove{
@@ -509,8 +540,6 @@ body .dribbble img {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
-    -9px -9px 16px rgba(255, 255, 255, 0.5);
   color: #000;
   margin-right: 20px;
   margin-left: 20px;
@@ -595,7 +624,7 @@ body .dribbble img {
 /* journey begins */
 .section.journey {
   color: #515257;
-  background-color: #bdc9c7;
+  background-color: #ffa07a;
 }
 
 
@@ -756,6 +785,9 @@ body .dribbble img {
   margin: 1em 0.75em 0 0;
   font-size: 0.77777em;
   line-height: 1.5em;
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 3px 5px;
 }
 
 .position {
