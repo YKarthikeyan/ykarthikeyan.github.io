@@ -123,7 +123,7 @@ header {
 /* intro begins */
 
 .section.intro {
-  background-color: #baf0fe;
+  background-color: #30b0ff;
 }
 
 .banner {
@@ -148,7 +148,7 @@ header {
   margin: 10px;
   font-size: 25px;
   font-variant: small-caps;
-  color: #66647e;
+  color: #fff;
 }
 
 .text-wrap {
