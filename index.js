@@ -60,7 +60,7 @@ document.querySelector('.upload').addEventListener('click', function(ev){
     self.classList.add('loading');
     setTimeout(function() {
         self.classList.remove('loading');
-        window.open('./files/Karthikeyan.Y-SoftwareEngineer-resume.pdf')
+        window.open('./files/Karthikeyan-SoftwareEngineer-resume.pdf')
     }, 4200);
 })
 
